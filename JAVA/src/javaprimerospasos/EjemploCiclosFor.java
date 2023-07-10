@@ -1,0 +1,12 @@
+package javaprimerospasos;
+
+public class EjemploCiclosFor {
+
+	public static void main(String[] args) {
+
+		for (int contador = 0;contador <=10; contador++) { // mientras que (condicion)
+			System.out.println(contador);
+		}
+		
+	}
+}
