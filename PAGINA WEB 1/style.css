@@ -1,123 +1,132 @@
-:root{
+/* General  */
+:root {
     --max-width: 1280px;
     --min-width: 320px;
-    --accent-color: #00c2ff;
-}
-
-
-*{box-sizing: border-box;}
-
-html,body{
-    height:100%;
-    margin:0;
-    padding:0;
+    --accent-color: purple;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: black;
     color: white;
     font-family: Roboto, sans-serif;
-}
-
-a{
-    text-decoration:none;
+  }
+  
+  a {
+    text-decoration: none;
     color: white;
-}
-
-.container{
+  }
+  
+  .book-appointment {
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+    font-size: 24px;
+  }
+  
+  /* Container */
+  .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     min-width: var(--min-width);
-    background-image: url('../PAGINA WEB 1/Img/vector\ fondo.webp');
+    background-image: url('../PAGINA WEB 1/Img/controlhorizontal.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
- 
-}
-
-.header, .content, .footer{
+    transition: background-image 0.7s ease-in-out;
+  }
+  
+  .header,
+  .content,
+  .footer {
     width: 100%;
-    margin:0 auto;
-    padding: 1 rem;
-}
-
-.header{
-    
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: var(--max-width);
+  }
+  
+  /* Header */
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.logo{
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    font-size: 30px;
-    font-weight:bold;
-}
-
-.logo_img{
-    margin-right: .5rem;
-    width: 40px;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .logo_img {
+    margin-right: 0.5rem;
     height: 40px;
-}
-
-.menu-list{
-    margin:0;
-}
-
-.menu-list_item{
-    display:inline-block;
-    margin: 0 .5rem;
+    width: 40px;
+  }
+  
+  .menu-list {
+    margin: 0;
+  }
+  
+  .menu-list_item {
+    display: inline-block;
+    margin: 0 0.5rem;
     font-size: 24px;
-}
-
-
-.menu-list_item:last-child{
+  }
+  
+  .menu-list_item:last-child {
     margin-right: 0;
-}
-
-.book-appointment{
-    background-color: var(--accent-color);
-    padding: 1rem 2rem;
-    font-size: 24px;
-}
-
-.content{
-   
+  }
+  
+  /* Content */
+  .content {
     flex-grow: 1;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-}
-
-.slideButton{
+  }
+  
+  .slideButton {
     position: absolute;
-    top:40%;
-    transform:translateY(-50%);
-    font-size:3rem;
-    cursor:pointer;
-}
-
-.prevSlide{
-    left:-3rem;
-}
-
-.nextSlide{
-    right: 3rem;
-}
-
-.content_claim{
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  .prevSlide {
+    left: -2rem;
+  }
+  
+  .nextSlide {
+    right: -2rem;
+  }
+  
+  .content_claim {
     font-size: 64px;
-    color:var(--accent-color);
+    color: var(--accent-color);
     margin: 0;
-}
-
-.content_subclaim{
+  }
+  
+  .content_subclaim {
     font-size: 36px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     margin-bottom: 2rem;
-}
-
-.footer_wrapper {
+  }
+  
+  /* Footer */
+  .footer_wrapper {
     background-color: black;
   }
   
@@ -138,19 +147,25 @@ a{
   .footer_widget_text {
     margin: 0;
   }
-
-@media screen and (max-width:1280px){
-    .header,.footer{
-        flex-direction:column;
-        text-align: center;
+  
+  /* Responsive stuff */
+  @media screen and (max-width: 1280px) {
+    .header,
+    .footer {
+      flex-direction: column;
+      text-align: center;
     }
-    .menu{
-        margin-top: 1.5rem;
+  
+    .menu {
+      margin-top: 1.5rem;
     }
-    .content{
-        align-items:center;
+  
+    .content {
+      align-items: center;
     }
-    .footer_widget{
-        margin-bottom: 1rem;
+  
+    .footer__widget {
+      margin-bottom: 1rem;
     }
-}
+  }
+  

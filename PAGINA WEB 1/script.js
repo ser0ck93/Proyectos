@@ -1,8 +1,9 @@
+// Define the images
 const images = [
-    'Img/controlhorizontal.jpg',
-    'Img/tetris.jpg',
-    'Img/controlhorizontal.jpg',
-  ];
+  'Img/controlhorizontal.jpg',
+  'Img/tetris.jpg',
+  'Img/game3.jpg',
+];
 
 // App state
 let index = 0;
@@ -31,7 +32,7 @@ function setImageIndex() {
   if (index < 0) index = max - 1;
   if (index === max) index = 0;
 }
-  
-  function changeBackgroundImage(backgroundImage, element) {
-    element.style.backgroundImage = `url(${backgroundImage})`;
-  }
+
+function changeBackgroundImage(backgroundImage, element) {
+  element.style.backgroundImage = `url(${backgroundImage})`;
+}
