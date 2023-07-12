@@ -11,6 +11,7 @@ header {
     width: 940px;
     position: relative;
     margin: 0 auto;
+    
 }
 
 nav{
@@ -174,12 +175,6 @@ font-weight: bold;
     font-style: italic;
 }
 
-.utensilios{
-    width: 120px;
-    float:left;
-    margin: 0 20px 20px 0;
-}
-
 .mapa{
     padding: 3em 0;
     background: linera-gradient(#FEFEFE #888888);
@@ -214,6 +209,7 @@ font-weight: bold;
 
 #banner{
     width: 100%;
+    height: 100%;
 }
 
 main > p{
